@@ -38,22 +38,22 @@ function setupSlider() {
 function setupCheckboxes() {
 	var symbolsCheckbox = document.getElementById("symbolsCheckbox");
 	symbolsCheckbox.checked = shouldUseSymbols
-	symbolsCheckbox.oninput = function () {
-		shouldUseSymbols = this;
+	symbolsCheckbox.onclick = function () {
+		shouldUseSymbols = this.checked;
 		generatePassword();
 	};
 
 	var numbersCheckbox = document.getElementById("numbersCheckbox");
 	numbersCheckbox.checked = shouldUseNumbers
-	numbersCheckbox.oninput = function () {
-		shouldUseNumbers = this;
+	numbersCheckbox.onclick = function () {
+		shouldUseNumbers = this.checked;
 		generatePassword();
 	};
 
 	var uppercaseCheckbox = document.getElementById("uppercaseCheckbox");
 	uppercaseCheckbox.checked = shouldUseUppercase
-	uppercaseCheckbox.oninput = function () {
-		shouldUseUppercase = this;
+	uppercaseCheckbox.onclick = function () {
+		shouldUseUppercase = this.checked;
 		generatePassword();
 	};
 }
