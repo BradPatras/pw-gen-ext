@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "pw generator",
+	"description": "This extension will generate strong passwords",
+	"version": "1.0",
+	"action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Generate Password"
+	},
+	"permissions": []
+}

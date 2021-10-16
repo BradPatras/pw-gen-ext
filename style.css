@@ -1,0 +1,27 @@
+html {
+	min-width: 25rem;
+}
+
+#main {
+	padding: 1rem;
+}
+
+#regen {
+}
+
+#pw {
+	color: lightslategray;
+}
+
+.checkbox {
+	margin-right: 0.4rem;
+}
+
+.range {
+	display: flex;
+}
+
+.slider {
+	width: 100%;
+	margin-right: .5rem;
+}

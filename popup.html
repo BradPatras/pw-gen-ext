@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>pw generator</title>
+	<script type="text/javascript" src="popup.js"></script>
+	<link rel="stylesheet" href="bulma/css/bulma.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<section id="main" class="hero">
+		<div class="container has-centered-text">
+			<form class="form">
+				<div class="field has-addons">
+					<div class="control">
+						<input id="pwInput" class="input" type="text" placeholder="password here">
+					</div>
+					<div class="control">
+						<a id="regen" class="button is-info">
+							Regenerate
+						</a>
+					</div>
+				</div>
+				<div class="field">
+
+				</div>
+				<div class="field">
+					<div class="control">
+						<label class="checkbox">
+							<input id="symbolsCheckbox" type="checkbox">
+							Symbols
+						</label>
+						<label class="checkbox">
+							<input id="uppercaseCheckbox" type="checkbox">
+							Uppercase
+						</label>
+						<label class="checkbox">
+							<input id="numbersCheckbox" type="checkbox">
+							Numbers
+						</label>
+					</div>
+				</div>
+				<div class="field">
+					<div class="control">
+						<label class="range">
+							<input type="range" min="8" max="24" value="16" class="slider" id="lengthRange"> <span>Length:&nbsp;</span> <span id="lengthValue"></span>
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+</body>
+
+</html>
