@@ -1,5 +1,8 @@
 # pw-gen-ext
-Generate strong passwords from a chrome extension!
+
+![icon](src/icon.png)
+
+Generate strong passwords from a chrome extension 🔐
 
 Configuration vectors:
 - length (8 - 24)
