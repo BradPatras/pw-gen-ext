@@ -61,28 +61,28 @@ function setupCheckboxes() {
 function generatePassword() {
 	var chars = lowercase;
 
-	var required = "";
+	var required = generateRandomString(1, lowercase);
 
 	if (shouldUseNumbers) {
 		chars += numbers;
-		required += generateRandomString(2, numbers);
+		required += generateRandomString(1, numbers);
 	}
 
 	if (shouldUseUppercase) {
 		chars += uppercase;
-		required += generateRandomString(2, uppercase);
+		required += generateRandomString(1, uppercase);
 	}
 
 	if (shouldUseSymbols) {
 		chars += symbols;
-		required += generateRandomString(2, symbols);
+		required += generateRandomString(1, symbols);
 	}
 	
 	let pwFill = generateRandomString(length - required.length, chars);
-	var pw = pwFill + required
-	shuffleArray(pw);
+	var pw = pwFill + required;
+	let shuffledPW = shuffleArray(Array.from(pw)).join('');
 
-	document.getElementById("pwInput").value = pw;
+	document.getElementById("pwInput").value = shuffledPW;
 }
 
 function generateRandomString(length, chars) {
