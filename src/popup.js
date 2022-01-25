@@ -4,7 +4,7 @@ var shouldUseNumbers = true;
 var length = 14;
 
 const numbers = '1234567890';
-const symbols = '~`! @#$%^&*()_-+={[}]|\\:;"\'<,>.?/';
+const symbols = '~`!@#$%^&*()_-+={[}]|\\:;"\'<,>.?/';
 const lowercase = 'abcdefghijklmnopqrstuvwxyz';
 const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
